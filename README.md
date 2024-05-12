@@ -26,8 +26,8 @@ Stream of aggregating results:
   * At time: 2024.5.12 12:14:12, Aggregating results: 879.46
 * If there are late-arrival records, the aggregating results of the past windows:
   * "Past Result of the affected window computed at: "+ timestamp + ", Updated result: " + Past_Result
-  * Past Result of the affected window computed at: + 2024.5.12 12:14:02, Updated result: 789.75
-  * Past Result of the affected window computed at: + 2024.5.12 12:14:00, Updated result: 869.34
+  * Past Result of the affected window computed at: 2024.5.12 12:14:02, Updated result: 789.75
+  * Past Result of the affected window computed at: 2024.5.12 12:14:00, Updated result: 869.34
 
 
 ## Source code and programming structure:

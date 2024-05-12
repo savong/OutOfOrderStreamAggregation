@@ -89,8 +89,9 @@ We have simuluated Data Stream Source by using socket programming and released t
 
 To sum up, please run the program in following order: 
      
-1 Java  /DataStreamSource/DataStreamSource_Transmission.java
-2 Java  /Non-Flink_Version/CMiX_PWiX_MAX.java
+* (1) Java  /DataStreamSource/DataStreamSource_Transmission.java
+* (2) Java  /Non-Flink_Version/CMiX_PWiX_MAX.java
+
   
   
 ### Dataset

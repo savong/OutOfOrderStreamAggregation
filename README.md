@@ -41,9 +41,9 @@ We have implemented the following operators:
 
 Other distributive and algebraic operators can be similarly implemented.
 
-We provide codes in two versions: (1) Apache Flink version and (2) Not-using Apache Flink version. Both versions produce the same results. The Flink version needs Apache Flink dependencies to run. Apache Flink is under constantly upgrading, some functions might become obsolete in the future. Therefore, we also provide a non-using Apache Flink version, which requires only Java adn can be run and reproduced very easily.
+We provide codes in two versions: (1) Apache Flink version and (2) Not-using Apache Flink version. Both versions produce the same results. The Flink version needs Apache Flink dependencies to run. Apache Flink is under constantly upgrading, so some functions might become obsolete in the future. Therefore, we also provide a non-using Apache Flink version, which requires only Java and can be run and reproduced very easily.
 
-For the Apache Flink version, it is required to appropriately create Apache Flink Project for Data Stream. Then just copy all codes in the Apache Flink version into that project.
+For the Apache Flink version, it is required to appropriately create Apache Flink Project for Data Stream. Then just copy all codes in the Apache Flink version into that project. 
 
 The codes can be found in:
 * "/Flink_Version" : For the implementation using Apache Flink.

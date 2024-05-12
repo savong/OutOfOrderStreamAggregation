@@ -10,6 +10,11 @@ Can accept data streams from:
 * Apache Kafka
 * and others
 
+## Main program:
+The programming codes can be found in 
+* /Non-Flink_Version : Using Java without Apache Flink
+* /Flink_Version : Using Apache Flink
+
   
 ### Dataset
 * [A DEBS12 Grand Challenge](https://debs.org/grand-challenges/2012/)

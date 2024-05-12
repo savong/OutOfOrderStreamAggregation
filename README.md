@@ -22,14 +22,14 @@ We have implemented the following operators:
 Other distributive and algebraic operators can be similarly implemented.
 
 The codes can be found in:
-* /Flink_Version : For the implementation using Apache Flink.
+* "/Flink_Version" : For the implementation using Apache Flink.
   * CMiX_PWiX_AVERAGE_using_Flink.java
   * CMiX_PWiX_MAX_using_Flink.java
   * CMiX_PWiX_MIN_using_Flink.java
   * CMiX_PWiX_RANGE_using_Flink.java
   * CMiX_PWiX_STD_using_Flink.java
   * CMiX_PWiX_SUM_using_Flink.java
-* /Non-Flink_Version : For the implementation using Java without Apache Flink.
+* "/Non-Flink_Version" : For the implementation using Java without Apache Flink.
   * CMiX_PWiX_AVERAGE.java
   * CMiX_PWiX_MAX.java
   * CMiX_PWiX_MIN.java
@@ -37,7 +37,7 @@ The codes can be found in:
   * CMiX_PWiX_STD.java
   * CMiX_PWiX_SUM.java
 
-The programming structures of all classes (CMiX_PWiX_AVERAGE.java, CMiX_PWiX_MAX.java, ...) are the same except that they have different operators. The main structure of each classe can be defined by the following main methods:
+The programming structures of all classes (CMiX_PWiX_AVERAGE.java, CMiX_PWiX_MAX.java, ...) are the same except that they have different operators. The main structure of each class can be defined by the following main methods:
 * "main" method:
   * Same as Algorithm 1 in the paper.
   * It requests the data stream source to access the data streams and does all processing of stream aggregation.
@@ -56,10 +56,18 @@ The programming structures of all classes (CMiX_PWiX_AVERAGE.java, CMiX_PWiX_MAX
  
 
 ## How to run the program: 
-To run the program, it is required to build a virtual streaming environment. by using to programs
+To run the program, it is required to build a virtual streaming environment as follows:
 * Data Stream Source: A program to read data from file line by line and send to the requested "Operator program".
-* Operator program: A program to request accessing data streams from the "Data Stream Source". After accessing the data streams, various computations can be applied.
+* Operator program ("/Flink_Version" and "/Non-Flink_Version"): A program to request accessing data streams from the "Data Stream Source". After accessing the data streams, various computations can be applied.
 
+We have similuated Data Stream Source by using socket programming and released the code in this github:
+* "/DataStreamSource":
+ * DataStreamSource_Transmission.java: 
+  * By running this program, the socket will be opened. Once there is a connection request from the clients (Operator program ("/Flink_Version" and "/Non-Flink_Version")), it will read data from "Sample_out_of_order_data.txt" file line by line and send to the clients in real time.
+   * Input: "Sample_out_of_order_data.txt"
+   * Output: Real-time data sending to the clients through socket.
+
+     
 * Java  /DataStreamSource/DataStreamSource_Transmission.java
 * Java  /Non-Flink_Version/CMiX_PWiX_MAX.java
   

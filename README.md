@@ -4,6 +4,11 @@ This is the implementation of the paper "O(1)-Time Complexity for Fixed Sliding-
 ## Contact
 savong-hashimoto@cs.tsukuba.ac.jp
 
+## How to run the code in brief:
+Please run the program in the following order: 
+* (1) Java  /DataStreamSource/DataStreamSource_Transmission.java
+* (2) Java  /Non-Flink_Version/CMiX_PWiX_MAX.java
+
 ## Input:
 Can accept data streams from:
 * Socket
@@ -82,13 +87,12 @@ We have simuluated Data Stream Source by using socket programming and released t
     * Input: "Sample_out_of_order_data.txt"
     * Output: Real-time data sending to the clients through socket.
   * Sample data:
-    * Sample_out_of_order_data_30_maxlateness_3.txt
+    * Sample_out_of_order_data_30_maxlateness_3.txt:
       * One late-arrival record after every 30 seconds. The lateness is 3 seconds.
-    * Sample_out_of_order_data_60_maxlateness_7.txt
+    * Sample_out_of_order_data_60_maxlateness_7.txt:
       * One late-arrival record after every 60 seconds. The lateness is 7 seconds. 
 
-To sum up, please run the program in following order: 
-     
+To sum up, please run the program in the following order: 
 * (1) Java  /DataStreamSource/DataStreamSource_Transmission.java
 * (2) Java  /Non-Flink_Version/CMiX_PWiX_MAX.java
 

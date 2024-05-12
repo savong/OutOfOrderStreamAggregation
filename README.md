@@ -10,10 +10,48 @@ Can accept data streams from:
 * Apache Kafka
 * and others
 
-## Main program:
-The programming codes can be found in 
-* /Non-Flink_Version : Using Java without Apache Flink
-* /Flink_Version : Using Apache Flink
+## Source code and programming structure:
+We have implemented the following operators:
+* Minimum
+* Maximum
+* Sum
+* Average
+* Standard deviation (STD)
+* Range
+Other distributive and algebraic operators can be similarly implemented.
+
+The codes can be found in:
+* /Flink_Version : For the implementation using Apache Flink.
+  * CMiX_PWiX_AVERAGE_using_Flink.java
+  * CMiX_PWiX_MAX_using_Flink.java
+  * CMiX_PWiX_MIN_using_Flink.java
+  * CMiX_PWiX_RANGE_using_Flink.java
+  * CMiX_PWiX_STD_using_Flink.java
+  * CMiX_PWiX_SUM_using_Flink.java
+* /Non-Flink_Version : For the implementation using Java without Apache Flink.
+  * CMiX_PWiX_AVERAGE.java
+  * CMiX_PWiX_MAX.java
+  * CMiX_PWiX_MIN.java
+  * CMiX_PWiX_RANGE.java
+  * CMiX_PWiX_STD.java
+  * CMiX_PWiX_SUM.java
+The programming structures of all classes (CMiX_PWiX_AVERAGE.java, CMiX_PWiX_MAX.java, ...) are the same except that they have different operators. The main structure of each classe can be defined by the following main methods:
+* "main" method:
+  * Same as Algorithm 1 in the paper.
+  * It requests the data stream source to access the data streams and does all processing of stream aggregation.
+* "Compute_Result" method:
+  * Same as Algorithm 2 in the paper.
+  * It computes the aggregating results of the current window.
+* "Aggkplus1Block" method:
+  * Same as Algorithm 3 in the paper.
+  * It does backward aggregation from the right-most to the left-most partitions in the next block.
+* "UpdatePCResult":
+  * Same as Algorithm 4 in the paper.
+  * It maintains the aggregating results of the current and past windows within the maximum allowed lateness.
+* "UPResult" method:
+  * Same as Algorithm 5 in the paper.
+  * The affected partitions and other partitions with newer timestamps are updated by aggregating the late-arrival records into them.
+ 
 
 ## How to run the program: 
 To run the program, it is required to build a virtual streaming environment. by using to programs

@@ -15,6 +15,14 @@ The programming codes can be found in
 * /Non-Flink_Version : Using Java without Apache Flink
 * /Flink_Version : Using Apache Flink
 
+## How to run the program: 
+To run the program, it is required to build a virtual streaming environment. by using to programs
+* Data Stream Source: A program to read data from file line by line and send to the requested "Operator program".
+* Operator program: A program to request accessing data streams from the "Data Stream Source". After accessing the data streams, various computations can be applied.
+
+* Java  /DataStreamSource/DataStreamSource_Transmission.java
+* Java  /Non-Flink_Version/CMiX_PWiX_MAX.java
+  
   
 ### Dataset
 * [A DEBS12 Grand Challenge](https://debs.org/grand-challenges/2012/)

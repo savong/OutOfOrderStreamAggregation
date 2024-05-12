@@ -5,7 +5,7 @@ This is the implementation of the paper "O(1)-Time Complexity for Fixed Sliding-
 savong-hashimoto@cs.tsukuba.ac.jp
 
 ## How to run the code in brief:
-Please run the program in the following order in the command prompt or other editors: 
+Please run the program in the following order in the two different command prompts or other editors: 
 * (1) Java  /DataStreamSource/DataStreamSource_Transmission.java
 * (2) Java  /Non-Flink_Version/CMiX_PWiX_MAX.java
 

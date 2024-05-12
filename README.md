@@ -140,8 +140,10 @@ Any splitting methods can be used to divide the window into partitions based on 
 [Cutty](https://dl.acm.org/doi/abs/10.1145/2983323.2983807) is adopted in this implementation.
 
 ## How to create Apache Flink Project:
-* Netbeans
-* IntelliJIDEA
+The manual can be found in "Manual How To Create Flink Project" folder:
+* "Netbeans＿Manual_Create Flink Project.pdf
+": For Apache Netbeans
+* "IntelliJ IDEA＿Manual_Create Flink Project.pdf": For IntelliJIDEA
 
 ## Library:
 [Apache Flink DataStream API](https://flink.apache.org/) is needed.

@@ -14,6 +14,16 @@ Format of each stream element is a text seperated by comma (timestamp, value). F
 * timestamp, value
 * 2024.5.12 12:14:12, 856.45
 
+## Output
+Stream of aggregating results:
+* The aggregating result of the current window:
+  * "At time: "+ current_time + ", Aggregating results:" + Result
+  * At time: 2024.5.12 12:14:12, Aggregating results: 879.46
+* If there are late-arrival records, the aggregating results of the past windows:
+  * "Past Result of the affected window computed at: "+ timestamp + ", Updated result: " + Past_Result
+  * Past Result of the affected window computed at: + 2024.5.12 12:14:02 + ", Updated result: " + 789.75
+  * Past Result of the affected window computed at: + 2024.5.12 12:14:00 + ", Updated result: " + 869.34
+
 
 ## Source code and programming structure:
 We have implemented the following operators:
@@ -93,8 +103,7 @@ There are two main parameters for the simulation of out-of-order streams:
 * minDelay/maxDelay:
   * Indicates the delays are uniformly distributed between the minimal and maximal delay
 
-## Output
-Stream of aggregating results.
+
 
 ## Parameters:
 * Window size

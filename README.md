@@ -81,10 +81,16 @@ We have simuluated Data Stream Source by using socket programming and released t
     * By running this program, the socket will be opened. Once there is a connection request from the clients (Operator program ("/Flink_Version" and "/Non-Flink_Version")), it will read data from "Sample_out_of_order_data.txt" file line by line and send to the clients in real time.
     * Input: "Sample_out_of_order_data.txt"
     * Output: Real-time data sending to the clients through socket.
+  * Sample data:
+    * Sample_out_of_order_data_30_maxlateness_3.txt
+      * One late-arrival record after every 30 seconds. The lateness is 3 seconds.
+    * Sample_out_of_order_data_60_maxlateness_7.txt
+      * One late-arrival record after every 60 seconds. The lateness is 7 seconds. 
 
+To sum up, please run the program in following order: 
      
-* Java  /DataStreamSource/DataStreamSource_Transmission.java
-* Java  /Non-Flink_Version/CMiX_PWiX_MAX.java
+1 Java  /DataStreamSource/DataStreamSource_Transmission.java
+2 Java  /Non-Flink_Version/CMiX_PWiX_MAX.java
   
   
 ### Dataset

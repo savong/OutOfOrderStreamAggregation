@@ -78,9 +78,9 @@ To run the program, it is required to build a virtual streaming environment as f
 We have simuluated Data Stream Source by using socket programming and released the code in this github:
 * "/DataStreamSource":
   * DataStreamSource_Transmission.java: 
-   * By running this program, the socket will be opened. Once there is a connection request from the clients (Operator program ("/Flink_Version" and "/Non-Flink_Version")), it will read data from "Sample_out_of_order_data.txt" file line by line and send to the clients in real time.
-   * Input: "Sample_out_of_order_data.txt"
-   * Output: Real-time data sending to the clients through socket.
+    * By running this program, the socket will be opened. Once there is a connection request from the clients (Operator program ("/Flink_Version" and "/Non-Flink_Version")), it will read data from "Sample_out_of_order_data.txt" file line by line and send to the clients in real time.
+    * Input: "Sample_out_of_order_data.txt"
+    * Output: Real-time data sending to the clients through socket.
 
      
 * Java  /DataStreamSource/DataStreamSource_Transmission.java

@@ -139,8 +139,9 @@ Any splitting methods can be used to divide the window into partitions based on 
 
 [Cutty](https://dl.acm.org/doi/abs/10.1145/2983323.2983807) is adopted in this implementation.
 
-## Main Methods:
-[FoldFunction](https://nightlies.apache.org/flink/flink-docs-release-1.7/api/java/org/apache/flink/api/common/functions/FoldFunction.html) in Apache Flink is used to customize the window operator so that incremental computation based on the paper "O(1)-Time Complexity for Fixed Sliding-window Aggregation over Out-of-order Data Streams" be efficiently processed. 
+## How to create Apache Flink Project:
+* Netbeans
+* IntelliJIDEA
 
 ## Library:
 [Apache Flink DataStream API](https://flink.apache.org/) is needed.

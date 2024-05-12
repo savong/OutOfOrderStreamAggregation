@@ -10,6 +10,11 @@ Can accept data streams from:
 * Apache Kafka
 * and others
 
+Format of each stream element is a text seperated by comma (timestamp, value). For example:
+* timestamp, value
+* 2024.5.12 12:14:12, 856.45
+
+
 ## Source code and programming structure:
 We have implemented the following operators:
 * Minimum

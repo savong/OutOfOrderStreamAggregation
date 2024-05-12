@@ -18,6 +18,7 @@ We have implemented the following operators:
 * Average
 * Standard deviation (STD)
 * Range
+
 Other distributive and algebraic operators can be similarly implemented.
 
 The codes can be found in:
@@ -35,6 +36,7 @@ The codes can be found in:
   * CMiX_PWiX_RANGE.java
   * CMiX_PWiX_STD.java
   * CMiX_PWiX_SUM.java
+
 The programming structures of all classes (CMiX_PWiX_AVERAGE.java, CMiX_PWiX_MAX.java, ...) are the same except that they have different operators. The main structure of each classe can be defined by the following main methods:
 * "main" method:
   * Same as Algorithm 1 in the paper.

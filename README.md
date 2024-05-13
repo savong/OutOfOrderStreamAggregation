@@ -9,6 +9,7 @@ Please run the program in the following order in the two different command promp
 * (1) Java  /DataStreamSource/DataStreamSource_Transmission.java
 * (2) Java  /Non-Flink_Version/CMiX_PWiX_MAX.java
 
+(2) can be changed to other operator classes as per purpose.
 ## Input:
 Can accept data streams from:
 * Socket
@@ -100,7 +101,7 @@ To sum up, please run the program in the following order:
 * (1) Java  /DataStreamSource/DataStreamSource_Transmission.java
 * (2) Java  /Non-Flink_Version/CMiX_PWiX_MAX.java
 
-  
+(2) can be changed to other operator classes as per requirement.
   
 ### Dataset
 * [A DEBS12 Grand Challenge](https://debs.org/grand-challenges/2012/)

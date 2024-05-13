@@ -20,6 +20,10 @@ import org.apache.flink.streaming.api.watermark.Watermark;
 import org.apache.flink.streaming.api.windowing.evictors.TimeEvictor;
 import org.apache.flink.streaming.api.windowing.time.Time;
 
+/*
+This is the implementation of the paper "O(1)-Time Complexity for Fixed Sliding-window Aggregation over Out-of-order Data Streams".
+By Savong Bou, Toshiyuki Amagasa, Hiroyuki Kitagawa
+*/
 
 /**
  *

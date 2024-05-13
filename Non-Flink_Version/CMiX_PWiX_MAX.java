@@ -19,6 +19,11 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+This is the implementation of the paper "O(1)-Time Complexity for Fixed Sliding-window Aggregation over Out-of-order Data Streams".
+By Savong Bou, Toshiyuki Amagasa, Hiroyuki Kitagawa
+*/
+
 public class CMiX_PWiX_MAX {
 
     public static void main(String[] args) throws UnknownHostException, IOException, ClassNotFoundException, InterruptedException{

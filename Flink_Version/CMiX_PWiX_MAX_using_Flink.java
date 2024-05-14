@@ -36,7 +36,7 @@ public class CMiX_PWiX_MAX_using_Flink {
         env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
         
 
-        
+        //Accepting incoming records from data streams
         DataStream<Tuple2<String,Double>> datastream = env.socketTextStream("localhost", 9999)
                 .flatMap(new LineSplitter());
         
@@ -83,6 +83,8 @@ public class CMiX_PWiX_MAX_using_Flink {
                         }
                         initialize=false;
                     }
+                    //This paper deals with out-of-order streams, so the progress of time depends on the event time.
+                    //Track the progress of time based on the timestamps of the incoming records from data streams
                     start_time = Math.min(start_time, Long.parseLong(v1.f0));
                     current_time = Math.max(current_time, Long.parseLong(v2.f0));
                     int duration = (int)((current_time - start_time)/1000);

@@ -72,8 +72,10 @@ public class CMiX_PWiX_MAX {
         //If window size is dividiable by slide size
         if(f2==0)
         {
+            //Accepting incoming records from data streams
             while((line = in.readLine()) != null) {
-                //System.out.println(line);
+                //This paper deals with out-of-order streams, so the progress of time depends on the event time.
+                //Track the progress of time based on the timestamps of the incoming records from data streams
                 String[] cells = line.split(",");
                 start_time = Math.min(start_time, Long.parseLong(cells[0]));
                 current_time = Math.max(current_time, Long.parseLong(cells[0]));
